@@ -12,47 +12,36 @@ body {
 
 
 /*header*/
+
 .container {
     width: 1128px;
     padding-left: 12px;
     padding-right: 12px;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
-.box{
-
-    display: flex;
-    
-}
 .web{
-
-    margin-right: 70px;
-    
-   
-    
+     margin-right: 70px;   
 }
+
 .flex{
     display: flex;
     align-items: center;
 }
 
-
-
 .header-list {
-    
-    padding: 0;
+    margin: 0 auto;
+     padding: 0;
     list-style: none;
 }
 
 .header{
-    background: #FFFFFF;
-    
+    height: 72px;
+     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    background: #FFFFFF;   
 }
 
 .webstudio {
-
-
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -70,19 +59,21 @@ body {
     text-transform: uppercase;
     color: #4D5AE5;
 }
+
 .header-list .item:not(:last-child){
     margin-right: 40px;
 }
+.header-link:hover,
+.header-link:focus{
+ color: #4D5AE5;
+}
+
 .header-list{
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-   
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 16px;
@@ -91,14 +82,17 @@ body {
     color: #2e2f42;
     text-decoration: none;
 }
+
 .navigation-list .navigation-list-item:not(:last-child) {
     margin-right: 40px;
 }
+
 .navigation-list{
-    list-style: none;
     display: flex;
     align-items: center;
-    margin-left: auto;  
+    margin-left: auto; 
+    
+    list-style: none;
 }
 
 .navigation-link {
@@ -109,6 +103,7 @@ body {
     color: #434455;
     text-decoration: none;
 }
+
 .navigation-link:hover,
 .navigation-link:focus{
     color: #4D5AE5;;
@@ -123,46 +118,43 @@ body {
     background-color: #2E2F42;
     
 }
+
 .header-top{
     text-align: center;
-    padding-top: 192px;
-   
-    
+    padding-top: 192px;    
 }
-
 
 .header-top-list {
     margin-top: 0;
     margin-bottom: 0;
+
     font-weight: 600;
     font-size: 56px;
     line-height: calc(60/56);
      text-align: center;
     letter-spacing: 0.02em;
+
     color: #FFFFFF;
 }
+
 .header-top-item{
     display: flex;
     justify-content: center;
     margin-top: 48px;
-       
-    
+          
 }
+
 .header-top-button {
-    
+    border-radius: 4px;
+     padding: 16px 32px;
+     gap: 10px;
+
     font-weight: 600;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.04em;
      color: #FFFFFF;
-    background: #4D5AE5;
-    
-    
-
-    border-radius: 4px;
-    padding: 16px 32px;
-    gap: 10px;
-
+    background: #4D5AE5;  
 }
 
 /*rule*/
@@ -172,8 +164,10 @@ body {
     list-style: none;
     padding: 0;
     margin: 0 auto;
+   
 
 }
+
 .rule .rule-link:not(:last-child){
     margin-right: 24px;
 }
@@ -207,19 +201,22 @@ body {
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
+
+
+
+.work-spase{
+     display: flex;
+    justify-content: center;
+     padding-left: 0;
+     margin-top: 72px;
+    margin-right: 0;
+    margin-bottom: 0;
+    list-style: none;
+     
+}
 .work-spase .work-space-photo:not(:last-child) {
     margin-right: 24px;
 }
-.work-spase{
-    
-    display: flex;
-    justify-content: center;
- 
-    list-style: none;
-    margin: 0 auto;
-    
-}
-
 
 /*section2*/
 
@@ -246,23 +243,29 @@ body {
     color: #2E2F42;
 }
 
-.team-spase{
-
+.team-spase ul{
     display: flex;
-    
     justify-content: center;
     
     list-style: none;
     margin: 0 auto;
-    padding: 0;
     padding-top: 72px;
 }
-.team-spase .team-space-photo:not(:last-child){
+
+.team-spase .team-box:not(:last-child){
     margin-right: 24px;
 }
 
+.team-box{
+    background: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+}
 
 .team-photo-name {
+    padding-top: 32px;
+    margin: 0 auto;
+    text-align: center;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -271,7 +274,11 @@ body {
 }
 
 .team-photo-job {
+    padding-top: 8px;
+    padding-bottom: 32px;
+    margin: 0 auto;
     font-size: 16px;
+    text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -281,16 +288,14 @@ body {
 .footer-item{
     min-width: 1440px;
     height: 310px;
+    padding: 0 auto;
+    margin: 0 auto;
     background: #2E2F42;
 
 }
-.footer-color{
-    
-    
-    
-}
+
 .footter-logo{
-    margin: 0 auto;
+    
     padding-top: 100px;
 }
 
@@ -302,6 +307,8 @@ body {
     letter-spacing: 0.03em;
      color: #F4F4FD;
 } 
+
+    
 
 .footer-list{
     margin: 0 auto;
@@ -332,10 +339,29 @@ body {
 }
 
 .nav-list-style{
+    
+    
+    margin-top: 96px;
     list-style: none;
+}
+.button-list{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: auto;
+}
+.button-list .button-list-nav:not(:last-child){
+    margin-right: 24px;
 }
 
 .nav-list-item{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+   
+    border: 1px solid #E7E9FC;
+        border-radius: 4px;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -354,12 +380,43 @@ body {
 .nav-list-style ul{
     list-style: none;
 }
-
-.lis-backround{
-    background: #FFFFFF;
+.contain{
+        width: 1158px;
+         padding: 0 15px;
+        margin: 0 auto;
+        
+}
+.list-backround{
+    display: block;
+}
+.portfolio-list{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 48px;
+        column-gap: 24px;
+        padding-left: 0;
+        margin-top: 72px;
+        margin-bottom: 120px;
+        
+}
+   
+.portfolio-list .list-backround{
+        flex-basis: calc((100% - 2 * 24) / 3);
 }
 
+.section-item {
+padding: 32px 0px;
+padding-left: 16px;
+
+border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+
+
+}
 .section-title {
+
+    margin: 0;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -367,7 +424,10 @@ body {
     color: #2E2F42;
 }
 
+
 .section-subtitle {
+margin: 0;
+padding-top: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
