@@ -36,7 +36,7 @@ body {
 }
 
 .header{
-    height: 72px;
+    
      box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     background: #FFFFFF;   
 }
@@ -68,7 +68,7 @@ body {
  color: #4D5AE5;
 }
 
-.header-list{
+.header-div{
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -90,8 +90,10 @@ body {
 .navigation-list{
     display: flex;
     align-items: center;
-    margin-left: auto; 
     
+    padding-left: 0; 
+    margin: 0;
+    margin-left: 331px;
     list-style: none;
 }
 
@@ -198,9 +200,10 @@ margin: 0;
 /*section1*/
 .work-padding{
 padding-bottom: 120px;
+margin: 0 auto;
 }
 .work-photo{
-    margin: 0 auto;
+    
     
     text-align: center;
     font-weight: 600;
@@ -353,14 +356,14 @@ padding-bottom: 120px;
     
     
     padding-top: 96px;
-    padding-bottom: 72px;
+    padding-bottom: 120px;
     list-style: none;
 }
 .button-list{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: auto;
+    padding-left: 0;
 }
 .button-list .button-list-nav:not(:last-child){
     margin-right: 24px;
@@ -408,8 +411,9 @@ padding-bottom: 120px;
         column-gap: 24px;
         padding-left: 0;
         margin: 0 auto;
+        margin-top: 72px;
         list-style: none;
-        padding-bottom: 120px;
+        
         
         
 }
